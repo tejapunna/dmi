@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Lexend } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -34,7 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${lexend.variable} ${ankaCoder.variable}`}>
       <body>
-        <InquiryPrefill />
+        <Suspense fallback={null}>
+          <InquiryPrefill />
+        </Suspense>
         {children}
       </body>
     </html>

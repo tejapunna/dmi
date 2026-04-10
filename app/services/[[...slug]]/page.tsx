@@ -392,7 +392,7 @@ const pageMap: Record<string, PageContent> = {
   },
 };
 
-export function getServicesMetadata(slug?: string[]): Metadata {
+export function getServicesMetadata(slug?: readonly string[]): Metadata {
   const key = slug?.join('/') ?? '';
   const content = pageMap[key];
 
@@ -411,7 +411,7 @@ export function getServicesMetadata(slug?: string[]): Metadata {
 
 type ServicesPageProps = {
   params: Promise<{
-    slug?: string[];
+    slug?: readonly string[];
   }>;
 };
 
