@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <a href="#" className="nav-logo" style={{ marginBottom: '0.5rem' }}>
-              <img src="/logo.png" alt="NinjaPromo Logo" className="nav-logo-img" />
+              <img src="/sunraiselogo.png" alt="NinjaPromo Logo" className="nav-logo-img" />
             </a>
             <p className="footer-brand-desc">
               Full-service digital marketing agency helping brands scale through innovative strategies and creative excellence.
