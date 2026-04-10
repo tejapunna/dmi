@@ -30,19 +30,15 @@ export default function Footer() {
             <a href="#services" className="footer-link">Paid Advertising</a>
             <a href="#services" className="footer-link">Digital Design</a>
             <a href="#services" className="footer-link">Social Media</a>
-            <a href="#services" className="footer-link">Email Marketing</a>
             <a href="#services" className="footer-link">CRO</a>
-            <a href="#services" className="footer-link">Public Relations</a>
             <a href="#services" className="footer-link">Digital Marketing Strategy</a>
             <a href="#services" className="footer-link">Web Analytics</a>
-            <a href="#services" className="footer-link">AI Marketing</a>
           </div>
 
           {/* Industries Column */}
           <div>
             <h4 className="footer-heading">Industries</h4>
             <a href="#services" className="footer-link">Finance</a>
-            <a href="#services" className="footer-link">SaaS</a>
             <a href="#services" className="footer-link">Ecommerce</a>
             <a href="#services" className="footer-link">Real Estate</a>
             <a href="#services" className="footer-link">Healthcare</a>
@@ -63,7 +59,6 @@ export default function Footer() {
           <div>
             <h4 className="footer-heading">Navigation</h4>
             <a href="#services" className="footer-link">Our Services</a>
-            <a href="#services" className="footer-link">Industries</a>
             <a href="#about" className="footer-link">About Us</a>
             <a href="#team" className="footer-link">Our People</a>
             <a href="#pricing" className="footer-link">Pricing</a>
