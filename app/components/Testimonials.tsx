@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Sarah Chen',
     role: 'CMO, TechFlow',
     avatar: 'SC',
-    avatarBg: 'linear-gradient(135deg, #9b1b30, #d48a13)',
+    avatarBg: 'linear-gradient(135deg, #111111, #ff6d1e)',
     stars: 5,
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     name: 'Marcus Johnson',
     role: 'Founder, GreenLeaf',
     avatar: 'MJ',
-    avatarBg: 'linear-gradient(135deg, #111111, #9b1b30)',
+    avatarBg: 'linear-gradient(135deg, #111111, #ff6d1e)',
     stars: 5,
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
     name: 'Elena Rodriguez',
     role: 'VP Marketing, Nordic Finance',
     avatar: 'ER',
-    avatarBg: 'linear-gradient(135deg, #d48a13, #3a3a40)',
+    avatarBg: 'linear-gradient(135deg, #ff6d1e, #111111)',
     stars: 5,
   },
 ];

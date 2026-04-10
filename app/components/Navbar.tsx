@@ -1,14 +1,15 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 
 const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" fill="#4F8EF7" opacity="0.15"/>
-        <circle cx="12" cy="12" r="10" stroke="#4F8EF7" strokeWidth="1.5"/>
-        <circle cx="12" cy="12" r="4" fill="#4F8EF7"/>
+        <circle cx="12" cy="12" r="10" fill="#FF6D1E" opacity="0.15"/>
+        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <circle cx="12" cy="12" r="4" fill="#FF6D1E"/>
       </svg>
     ),
     title: 'SEO',
@@ -17,9 +18,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="5" fill="#A855F7" opacity="0.15"/>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#A855F7" strokeWidth="1.5"/>
-        <path d="M8 12h8M12 8v8" stroke="#A855F7" strokeWidth="2" strokeLinecap="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#FF6D1E" opacity="0.15"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M8 12h8M12 8v8" stroke="#FF6D1E" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Paid Advertising',
@@ -28,9 +29,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="5" fill="#9B1B30" opacity="0.15"/>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#9B1B30" strokeWidth="1.5"/>
-        <path d="M8 16L12 8l4 8" stroke="#9B1B30" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#FF6D1E" opacity="0.15"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M8 16L12 8l4 8" stroke="#FF6D1E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Digital Design',
@@ -42,9 +43,9 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="4" fill="#1877F2" opacity="0.12"/>
-        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" stroke="#1877F2" strokeWidth="1.5"/>
-        <path d="M12 8v8M8 12h8" stroke="#1877F2" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#FF6D1E" opacity="0.12"/>
+        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M12 8v8M8 12h8" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'Social Media',
@@ -52,9 +53,9 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="4" width="20" height="16" rx="4" fill="#F97316" opacity="0.12"/>
-        <rect x="2" y="4" width="20" height="16" rx="4" stroke="#F97316" strokeWidth="1.5"/>
-        <path d="M2 9l10 6 10-6" stroke="#F97316" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="4" width="20" height="16" rx="4" fill="#FF6D1E" opacity="0.12"/>
+        <rect x="2" y="4" width="20" height="16" rx="4" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M2 9l10 6 10-6" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'Email Marketing',
@@ -62,8 +63,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#6366F1" strokeWidth="1.5"/>
-        <path d="M12 8v4l3 3" stroke="#6366F1" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M12 8v4l3 3" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'CRO',
@@ -71,8 +72,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#8B5CF6" strokeWidth="1.5"/>
-        <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke="#8B5CF6" strokeWidth="1.5"/>
+        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke="#FF6D1E" strokeWidth="1.5"/>
       </svg>
     ),
     label: 'Public Relations',
@@ -80,8 +81,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#EC4899" strokeWidth="1.5"/>
-        <path d="M12 8v4M12 16h.01" stroke="#EC4899" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M12 8v4M12 16h.01" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'Digital Marketing Strategy',
@@ -89,8 +90,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#F59E0B" strokeWidth="1.5"/>
-        <path d="M6 18l4-8 4 6 2-4 2 6" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M6 18l4-8 4 6 2-4 2 6" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     label: 'Web Analytics',
@@ -98,9 +99,9 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" fill="#3B82F6" opacity="0.12"/>
-        <circle cx="12" cy="12" r="10" stroke="#3B82F6" strokeWidth="1.5"/>
-        <path d="M9 9l1.5 1.5L9 12M15 9l-1.5 1.5L15 12M10 16h4" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="12" r="10" fill="#FF6D1E" opacity="0.12"/>
+        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
+        <path d="M9 9l1.5 1.5L9 12M15 9l-1.5 1.5L15 12M10 16h4" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     label: 'AI Marketing',
@@ -218,9 +219,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-nav">
       {/* Logo */}
-      <a href="#" className="nav-logo">
+      <Link href="/" className="nav-logo">
         <img src="/sunraiselogo.png" alt="Logo" className="nav-logo-img" />
-      </a>
+      </Link>
 
       {/* Desktop nav links */}
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
@@ -363,7 +364,7 @@ export default function Navbar() {
         <a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</a>
         <a href="#team" className="nav-link" onClick={() => setMenuOpen(false)}>Our People</a>
         <a href="#pricing" className="nav-link" onClick={() => setMenuOpen(false)}>Pricing</a>
-        <a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>Contact Us</a>
+        <a href="/contact-us" className="nav-cta" onClick={() => setMenuOpen(false)}>Contact Us</a>
       </div>
 
       {/* Hamburger */}

@@ -9,21 +9,21 @@ const metrics = [
     label: 'Hours Turnaround',
     labelColor: 'blue',
     desc: 'Launch projects in less than a day. Perfect for those tight deadlines and urgent tasks.',
-    glare: 'rgba(73, 110, 245, 0.15)',
+    glare: 'rgba(255, 109, 30, 0.15)',
   },
   {
     number: '50%+',
     label: 'Output Growth',
     labelColor: 'purple',
     desc: 'Get ready for a major marketing scale-up. Outpace your average agency\'s output.',
-    glare: 'rgba(154, 77, 255, 0.15)',
+    glare: 'rgba(255, 109, 30, 0.15)',
   },
   {
     number: '$100k',
     label: 'Saving',
     labelColor: 'magenta',
     desc: 'Average saving on annual agency fees compared to building an in-house team.',
-    glare: 'rgba(232, 77, 255, 0.15)',
+    glare: 'rgba(255, 109, 30, 0.15)',
   },
 ];
 

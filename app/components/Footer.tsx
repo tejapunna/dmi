@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="footer" id="footer">
@@ -7,9 +9,9 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand Column */}
           <div>
-            <a href="#" className="nav-logo" style={{ marginBottom: '0.5rem' }}>
+            <Link href="/" className="nav-logo" style={{ marginBottom: '0.5rem' }}>
               <img src="/sunraiselogo.png" alt="NinjaPromo Logo" className="nav-logo-img" />
-            </a>
+            </Link>
             <p className="footer-brand-desc">
               Full-service digital marketing agency helping brands scale through innovative strategies and creative excellence.
             </p>
@@ -24,34 +26,49 @@ export default function Footer() {
           {/* Services Column */}
           <div>
             <h4 className="footer-heading">Services</h4>
-            <a href="#" className="footer-link">SEO & Content</a>
-            <a href="#" className="footer-link">Social Media</a>
-            <a href="#" className="footer-link">Paid Advertising</a>
-            <a href="#" className="footer-link">Branding & Design</a>
-            <a href="#" className="footer-link">Web Development</a>
-            <a href="#" className="footer-link">Video Production</a>
+            <a href="#services" className="footer-link">SEO</a>
+            <a href="#services" className="footer-link">Paid Advertising</a>
+            <a href="#services" className="footer-link">Digital Design</a>
+            <a href="#services" className="footer-link">Social Media</a>
+            <a href="#services" className="footer-link">Email Marketing</a>
+            <a href="#services" className="footer-link">CRO</a>
+            <a href="#services" className="footer-link">Public Relations</a>
+            <a href="#services" className="footer-link">Digital Marketing Strategy</a>
+            <a href="#services" className="footer-link">Web Analytics</a>
+            <a href="#services" className="footer-link">AI Marketing</a>
           </div>
 
-          {/* Company Column */}
+          {/* Industries Column */}
           <div>
-            <h4 className="footer-heading">Company</h4>
-            <a href="#" className="footer-link">About Us</a>
-            <a href="#" className="footer-link">Our Team</a>
-            <a href="#" className="footer-link">Careers</a>
-            <a href="#" className="footer-link">Blog</a>
-            <a href="#" className="footer-link">Contact</a>
-            <a href="#" className="footer-link">Partners</a>
+            <h4 className="footer-heading">Industries</h4>
+            <a href="#services" className="footer-link">Finance</a>
+            <a href="#services" className="footer-link">SaaS</a>
+            <a href="#services" className="footer-link">Ecommerce</a>
+            <a href="#services" className="footer-link">Real Estate</a>
+            <a href="#services" className="footer-link">Healthcare</a>
+            <a href="#services" className="footer-link">IT &amp; Software</a>
           </div>
 
-          {/* Resources Column */}
+          {/* Industries Column */}
           <div>
-            <h4 className="footer-heading">Resources</h4>
-            <a href="#" className="footer-link">Case Studies</a>
-            <a href="#" className="footer-link">Pricing</a>
-            <a href="#" className="footer-link">Free Audit</a>
-            <a href="#" className="footer-link">Newsletter</a>
-            <a href="#" className="footer-link">Documentation</a>
-            <a href="#" className="footer-link">Help Center</a>
+            <h4 className="footer-heading">Types of Business</h4>
+            <a href="#services" className="footer-link">B2B</a>
+            <a href="#services" className="footer-link">B2C</a>
+            <a href="#services" className="footer-link">Small Business</a>
+            <a href="#services" className="footer-link">Startup</a>
+            <a href="#services" className="footer-link">Enterprise</a>
+          </div>
+
+          {/* Navigation Column */}
+          <div>
+            <h4 className="footer-heading">Navigation</h4>
+            <a href="#services" className="footer-link">Our Services</a>
+            <a href="#services" className="footer-link">Industries</a>
+            <a href="#about" className="footer-link">About Us</a>
+            <a href="#team" className="footer-link">Our People</a>
+            <a href="#pricing" className="footer-link">Pricing</a>
+            <a href="/contact-us" className="footer-link">Contact Us</a>
+            <a href="#cases" className="footer-link">Case Studies</a>
           </div>
         </div>
 
