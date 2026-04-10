@@ -4,7 +4,7 @@ import ScrollAnimate from './ScrollAnimate';
 
 const testimonials = [
   {
-    text: '"NinjaPromo completely transformed our digital presence. Their SEO strategy alone drove a 340% increase in organic traffic within six months."',
+    text: '"DMI Sunraise Solutions completely transformed our digital presence. Their SEO strategy alone drove a 340% increase in organic traffic within six months."',
     name: 'Sarah Chen',
     role: 'CMO, TechFlow',
     avatar: 'SC',
@@ -20,7 +20,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    text: '"Working with NinjaPromo felt like having an in-house team but with the expertise of a top-tier agency. Outstanding results, every time."',
+    text: '"Working with DMI SUNRAISE felt like having an in-house team but with the expertise of a top-tier agency. Outstanding results, every time."',
     name: 'Elena Rodriguez',
     role: 'VP Marketing, Nordic Finance',
     avatar: 'ER',

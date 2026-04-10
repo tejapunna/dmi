@@ -13,7 +13,13 @@ const multiCols = [
       </svg>
     ),
     title: 'SEO',
-    items: ['Local', 'Technical', 'International', 'Multilingual', 'Generative Engine Optimization'],
+    items: [
+      { label: 'Local', href: '/services/seo/local' },
+      { label: 'Technical', href: '/services/seo/technical' },
+      { label: 'International', href: '/services/seo/international' },
+      { label: 'Multilingual', href: '/services/seo/multilingual' },
+      { label: 'Generative Engine Optimization', href: '/services/seo/generative-engine-optimization' },
+    ],
   },
   {
     icon: (
@@ -24,7 +30,13 @@ const multiCols = [
       </svg>
     ),
     title: 'Paid Advertising',
-    items: ['Google Ads', 'Facebook Ads', 'Instagram Ads', 'YouTube Ads', 'LinkedIn Ads'],
+    items: [
+      { label: 'Google Ads', href: '/services/paid-advertising/google-ads' },
+      { label: 'Facebook Ads', href: '/services/paid-advertising/facebook-ads' },
+      { label: 'Instagram Ads', href: '/services/paid-advertising/instagram-ads' },
+      { label: 'YouTube Ads', href: '/services/paid-advertising/youtube-ads' },
+      { label: 'LinkedIn Ads', href: '/services/paid-advertising/linkedin-ads' },
+    ],
   },
   {
     icon: (
@@ -35,7 +47,11 @@ const multiCols = [
       </svg>
     ),
     title: 'Digital Design',
-    items: ['Web Design', 'UI/UX Design', 'Branding'],
+    items: [
+      { label: 'Web Design', href: '/services/digital-design/web-design' },
+      { label: 'UI/UX Design', href: '/services/digital-design/ui-ux-design' },
+      { label: 'Branding', href: '/services/digital-design/branding' },
+    ],
   },
 ];
 
@@ -49,16 +65,7 @@ const singleItems = [
       </svg>
     ),
     label: 'Social Media',
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="4" width="20" height="16" rx="4" fill="#FF6D1E" opacity="0.12"/>
-        <rect x="2" y="4" width="20" height="16" rx="4" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M2 9l10 6 10-6" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    label: 'Email Marketing',
+    href: '/services/social-media',
   },
   {
     icon: (
@@ -68,15 +75,7 @@ const singleItems = [
       </svg>
     ),
     label: 'CRO',
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke="#FF6D1E" strokeWidth="1.5"/>
-      </svg>
-    ),
-    label: 'Public Relations',
+    href: '/services/cro',
   },
   {
     icon: (
@@ -86,6 +85,7 @@ const singleItems = [
       </svg>
     ),
     label: 'Digital Marketing Strategy',
+    href: '/services/digital-marketing-strategy',
   },
   {
     icon: (
@@ -95,27 +95,30 @@ const singleItems = [
       </svg>
     ),
     label: 'Web Analytics',
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" fill="#FF6D1E" opacity="0.12"/>
-        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M9 9l1.5 1.5L9 12M15 9l-1.5 1.5L15 12M10 16h4" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-    label: 'AI Marketing',
+    href: '/services/web-analytics',
   },
 ];
 
 const industriesCols = [
   {
     title: 'Industries',
-    items: ['Finance', 'SaaS', 'Ecommerce', 'Real Estate', 'Healthcare', 'IT & Software',],
+    items: [
+      { label: 'Finance', href: '/services/industries/finance' },
+      { label: 'Ecommerce', href: '/services/industries/ecommerce' },
+      { label: 'Real Estate', href: '/services/industries/real-estate' },
+      { label: 'Healthcare', href: '/services/industries/healthcare' },
+      { label: 'IT & Software', href: '/services/industries/it-software' },
+    ],
   },
   {
     title: 'Types of business',
-    items: ['B2B', 'B2C', 'Small Business', 'Startup', 'Enterprise'],
+    items: [
+      { label: 'B2B', href: '/services/business-types/b2b' },
+      { label: 'B2C', href: '/services/business-types/b2c' },
+      { label: 'Small Business', href: '/services/business-types/small-business' },
+      { label: 'Startup', href: '/services/business-types/startup' },
+      { label: 'Enterprise', href: '/services/business-types/enterprise' },
+    ],
   },
 ];
 
@@ -273,15 +276,15 @@ export default function Navbar() {
                     </div>
                     <ul className="ndd-col-list">
                       {col.items.map((item) => (
-                        <li key={item}>
-                          <a href="#services" className="ndd-item" onClick={() => setDropdownOpen(false)}>
+                        <li key={item.label}>
+                          <Link href={item.href} className="ndd-item" onClick={() => setDropdownOpen(false)}>
                             <span className="ndd-item-icon" aria-hidden="true">
                               <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                                 <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                               </svg>
                             </span>
-                            <span>{item}</span>
-                          </a>
+                            <span>{item.label}</span>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -295,10 +298,10 @@ export default function Navbar() {
               {/* Right: single item column */}
               <div className="ndd-single">
                 {singleItems.map((s) => (
-                  <a href="#services" className="ndd-single-item" key={s.label} onClick={() => setDropdownOpen(false)}>
+                  <Link href={s.href} className="ndd-single-item" key={s.label} onClick={() => setDropdownOpen(false)}>
                     <span className="ndd-single-icon">{s.icon}</span>
                     <span>{s.label}</span>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -343,15 +346,15 @@ export default function Navbar() {
                   <div className="industries-col-title">{col.title}</div>
                   <ul className="industries-col-list">
                     {col.items.map((item) => (
-                      <li key={item}>
-                        <a href="#services" className="industries-item" onClick={() => setIndustriesOpen(false)}>
+                      <li key={item.label}>
+                        <Link href={item.href} className="industries-item" onClick={() => setIndustriesOpen(false)}>
                           <span className="industries-item-icon" aria-hidden="true">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                               <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                           </span>
-                          <span>{item}</span>
-                        </a>
+                          <span>{item.label}</span>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -361,10 +364,10 @@ export default function Navbar() {
           </div>
         </div>
 
-        <a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</a>
-        <a href="#team" className="nav-link" onClick={() => setMenuOpen(false)}>Our People</a>
-        <a href="#pricing" className="nav-link" onClick={() => setMenuOpen(false)}>Pricing</a>
-        <a href="/contact-us" className="nav-cta" onClick={() => setMenuOpen(false)}>Contact Us</a>
+        <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</Link>
+        <Link href="/team" className="nav-link" onClick={() => setMenuOpen(false)}>Our People</Link>
+        <Link href="/pricing" className="nav-link" onClick={() => setMenuOpen(false)}>Pricing</Link>
+        <Link href="/contact-us" className="nav-cta" onClick={() => setMenuOpen(false)}>Contact Us</Link>
       </div>
 
       {/* Hamburger */}

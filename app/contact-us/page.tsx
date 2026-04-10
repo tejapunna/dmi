@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Contact Us | DMI Sunraise',
+  description:
+    'Talk to the DMI Sunraise team about SEO, paid media, CRO, and growth strategy for your business.',
+};
 
 export default function ContactUsPage() {
   return (
@@ -142,18 +149,18 @@ export default function ContactUsPage() {
               <h3>Need Immediate Assistance?</h3>
               <p>For urgent matters, call our priority support line available 24/7.</p>
               <div className="urgent-actions">
-                <a href="tel:+918143528142" className="urgent-action-btn">
+                {/* <a href="tel:+918143528142" className="urgent-action-btn">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <path d="M5 4h3l1.5 4-2 1.5a16 16 0 006 6L15 13l4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 7.2 2 2 0 015 4z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                   <span>+91 90632 55632</span>
-                </a>
+                </a> */}
                 <a href="mailto:hi@heybyte.in" className="urgent-action-btn">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" strokeWidth="1.7"/>
                     <path d="M4 7l8 6 8-6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>support@sunraisesolutions.com</span>
+                  <span>info@dmisunraisesolutions.com</span>
                 </a>
               </div>
             </div>

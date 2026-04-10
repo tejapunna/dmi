@@ -21,8 +21,9 @@ export default function Hero() {
 
           <ScrollAnimate animation="fade-up" delay={200}>
             <h1 className="hero-title">
-              We Drive Growth<br />
-              Through <span className="gradient-text">Digital Excellence</span>
+              <span className="hero-title-line">We Drive Growth</span>
+              <span className="hero-title-line">Through</span>
+              <span className="hero-title-line"><span className="gradient-text">Digital Excellence</span></span>
             </h1>
           </ScrollAnimate>
 
