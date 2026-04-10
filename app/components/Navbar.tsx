@@ -17,8 +17,8 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-nav">
       <a href="#" className="nav-logo">
-        <div className="nav-logo-icon">⚡</div>
-        <span>NINJA<span className="gradient-text">PROMO</span></span>
+        <img src="/logo.png" alt="NinjaPromo Logo" className="nav-logo-img" />
+        <span>DMI <span className="gradient-text">SUNRAISE SOLUTIONS</span></span>
       </a>
 
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
