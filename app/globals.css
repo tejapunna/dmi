@@ -18,16 +18,16 @@
   --text-secondary: rgba(255, 255, 255, 0.65);
   --text-muted: rgba(255, 255, 255, 0.4);
 
-  --accent-blue: #c1121f;
+  --accent-blue: #9b1b30;
   --accent-purple: #d48a13;
   --accent-magenta: #8b8b8f;
   --accent-orange: #d48a13;
   --accent-green: #8b8b8f;
 
-  --gradient-primary: linear-gradient(135deg, #c1121f, #d48a13);
-  --gradient-accent: linear-gradient(135deg, #111111, #c1121f);
-  --gradient-warm: linear-gradient(135deg, #d48a13, #c1121f);
-  --gradient-text: linear-gradient(90deg, #d48a13, #c1121f, #8b8b8f);
+  --gradient-primary: linear-gradient(135deg, #9b1b30, #d48a13);
+  --gradient-accent: linear-gradient(135deg, #111111, #9b1b30);
+  --gradient-warm: linear-gradient(135deg, #d48a13, #9b1b30);
+  --gradient-text: linear-gradient(90deg, #d48a13, #9b1b30, #3a3a40);
 
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-card: rgba(255, 255, 255, 0.08);
@@ -96,10 +96,7 @@ ol {
 
 /* ---------- Typography ---------- */
 .gradient-text {
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #d48a13;
 }
 
 .section-label {
@@ -1419,7 +1416,7 @@ ol {
 }
 
 .org-avatar-focal {
-  background: linear-gradient(145deg, #111111 0%, #c1121f 50%, #d48a13 100%);
+  background: linear-gradient(145deg, #111111 0%, #9b1b30 50%, #d48a13 100%);
   border: 3px solid rgba(154, 77, 255, 0.5);
   color: #fff;
   box-shadow:

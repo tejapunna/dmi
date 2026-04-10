@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Sarah Chen',
     role: 'CMO, TechFlow',
     avatar: 'SC',
-    avatarBg: 'linear-gradient(135deg, #c1121f, #d48a13)',
+    avatarBg: 'linear-gradient(135deg, #9b1b30, #d48a13)',
     stars: 5,
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     name: 'Marcus Johnson',
     role: 'Founder, GreenLeaf',
     avatar: 'MJ',
-    avatarBg: 'linear-gradient(135deg, #111111, #c1121f)',
+    avatarBg: 'linear-gradient(135deg, #111111, #9b1b30)',
     stars: 5,
   },
   {

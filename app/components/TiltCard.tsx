@@ -9,7 +9,7 @@ interface TiltCardProps {
   maxTilt?: number;
 }
 
-export default function TiltCard({ children, className = '', glareColor = 'rgba(193, 18, 31, 0.16)', maxTilt = 15 }: TiltCardProps) {
+export default function TiltCard({ children, className = '', glareColor = 'rgba(155, 27, 48, 0.16)', maxTilt = 15 }: TiltCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState({
     transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)',

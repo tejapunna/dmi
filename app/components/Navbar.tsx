@@ -28,9 +28,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="5" fill="#EF4444" opacity="0.15"/>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#EF4444" strokeWidth="1.5"/>
-        <path d="M8 16L12 8l4 8" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#9B1B30" opacity="0.15"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#9B1B30" strokeWidth="1.5"/>
+        <path d="M8 16L12 8l4 8" stroke="#9B1B30" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Digital Design',
