@@ -10,6 +10,7 @@ interface TiltCardProps {
 }
 
 export default function TiltCard({ children, className = '', glareColor = 'rgba(244, 180, 0, 0.16)', maxTilt = 15 }: TiltCardProps) {
+  const isInteractive = maxTilt > 0;
   const cardRef = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState({
     transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
@@ -21,6 +22,7 @@ export default function TiltCard({ children, className = '', glareColor = 'rgba(
   });
 
   const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isInteractive) return;
     if (!cardRef.current) return;
 
     const rect = cardRef.current.getBoundingClientRect();
@@ -46,6 +48,7 @@ export default function TiltCard({ children, className = '', glareColor = 'rgba(
   };
 
   const handleMouseLeave = () => {
+    if (!isInteractive) return;
     setStyle({
       transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
       transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
@@ -61,20 +64,22 @@ export default function TiltCard({ children, className = '', glareColor = 'rgba(
       ref={cardRef}
       className={className}
       style={{ ...style, position: 'relative', transformStyle: 'preserve-3d', height: '100%', width: '100%' }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      onMouseMove={isInteractive ? handleMouseMove : undefined}
+      onMouseLeave={isInteractive ? handleMouseLeave : undefined}
     >
       {children}
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          borderRadius: 'inherit',
-          pointerEvents: 'none',
-          ...glareStyle,
-          transition: 'opacity 0.3s ease',
-        }}
-      />
+      {isInteractive && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            borderRadius: 'inherit',
+            pointerEvents: 'none',
+            ...glareStyle,
+            transition: 'opacity 0.3s ease',
+          }}
+        />
+      )}
     </div>
   );
 }
