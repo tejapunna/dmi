@@ -72,7 +72,7 @@ export default function AboutPage() {
       <section className="about-split section">
         <div className="container about-split-grid">
           <ScrollAnimate animation="fade-left">
-            <TiltCard className="about-visual-wrap" maxTilt={8} glareColor="rgba(255, 109, 30, 0.18)">
+            <TiltCard className="about-visual-wrap" maxTilt={8} glareColor="rgba(244, 180, 0, 0.18)">
               <div className="about-visual glass-card">
                 <img src="/hero-person.png" alt="About company visual" className="about-visual-image" />
               </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
           <div className="about-values-grid">
             {values.map((value, index) => (
               <ScrollAnimate key={value.title} animation="fade-up" delay={150 + index * 45}>
-                <TiltCard className="about-value-tilt" maxTilt={6} glareColor="rgba(255, 109, 30, 0.12)">
+                <TiltCard className="about-value-tilt" maxTilt={6} glareColor="rgba(244, 180, 0, 0.12)">
                   <div className="about-value-card glass-card">
                     <div className="about-value-icon">{index + 1}</div>
                     <h3>{value.title}</h3>

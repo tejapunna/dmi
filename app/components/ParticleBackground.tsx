@@ -25,7 +25,7 @@ export default function ParticleBackground() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const colors = ['#ff6d1e', '#ff6d1e', '#ff6d1e', '#ff6d1e'];
+    const colors = ['#f4b400', '#ffd54a', '#d89a00', '#b30000'];
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -68,7 +68,7 @@ export default function ParticleBackground() {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(255, 109, 30, ${0.08 * (1 - dist / 150)})`;
+            ctx.strokeStyle = `rgba(244, 180, 0, ${0.08 * (1 - dist / 150)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

@@ -86,7 +86,7 @@ export default function PricingPage() {
           <div className="pricing-grid">
             {plans.map((plan, index) => (
               <ScrollAnimate key={plan.name} animation="fade-up" delay={180 + index * 50}>
-                <TiltCard className="pricing-plan-tilt" maxTilt={8} glareColor="rgba(255, 109, 30, 0.14)">
+                <TiltCard className="pricing-plan-tilt" maxTilt={8} glareColor="rgba(244, 180, 0, 0.14)">
                   <article className="pricing-plan glass-card">
                     <div className="pricing-plan-badge">{plan.accent}</div>
                     <h2>{plan.name}</h2>
@@ -125,7 +125,7 @@ export default function PricingPage() {
           <div className="pricing-feature-grid">
             {features.map((feature, index) => (
               <ScrollAnimate key={feature.title} animation="fade-up" delay={160 + index * 35}>
-                <TiltCard className="pricing-feature-tilt" maxTilt={6} glareColor="rgba(255, 109, 30, 0.1)">
+                <TiltCard className="pricing-feature-tilt" maxTilt={6} glareColor="rgba(244, 180, 0, 0.1)">
                   <article className="pricing-feature-card glass-card">
                     <div className="pricing-feature-icon">✦</div>
                     <h3>{feature.title}</h3>
@@ -171,7 +171,7 @@ export default function PricingPage() {
           </div>
 
           <ScrollAnimate animation="fade-left" delay={140}>
-            <TiltCard className="pricing-faq-visual-tilt" maxTilt={7} glareColor="rgba(255, 109, 30, 0.12)">
+            <TiltCard className="pricing-faq-visual-tilt" maxTilt={7} glareColor="rgba(244, 180, 0, 0.12)">
               <div className="pricing-faq-visual glass-card">
                 <img src="/hero-person.png" alt="Team member standing in a workspace" />
               </div>

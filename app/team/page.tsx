@@ -90,7 +90,7 @@ export default function TeamPage() {
           <ScrollAnimate animation="fade-left" delay={140}>
             <div className="team-mosaic">
               {mosaicImages.map((image, index) => (
-                <TiltCard key={image.alt} className={`team-mosaic-tile team-mosaic-tile-${index + 1}`} maxTilt={7} glareColor="rgba(255, 109, 30, 0.12)">
+                <TiltCard key={image.alt} className={`team-mosaic-tile team-mosaic-tile-${index + 1}`} maxTilt={7} glareColor="rgba(244, 180, 0, 0.12)">
                   <div className="team-mosaic-card glass-card">
                     <img className="team-mosaic-img" src={image.src} alt={image.alt} />
                   </div>
@@ -120,7 +120,7 @@ export default function TeamPage() {
           <div className="team-people-grid" aria-label="Leadership team members">
             {leadershipTeam.map((member, index) => (
               <ScrollAnimate key={member.name} animation="fade-up" delay={180 + index * 40}>
-                <TiltCard className="team-person-tilt" maxTilt={7} glareColor="rgba(255, 109, 30, 0.14)">
+                <TiltCard className="team-person-tilt" maxTilt={7} glareColor="rgba(244, 180, 0, 0.14)">
                   <article className="team-person-card glass-card">
                     <div className="team-person-avatar-wrap">
                       <img className="team-person-avatar" src={member.image} alt={member.name} />

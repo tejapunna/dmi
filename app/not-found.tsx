@@ -42,7 +42,7 @@ export default function NotFound() {
           </div>
 
           <ScrollAnimate animation="fade-left" delay={120}>
-            <TiltCard className="not-found-art-tilt" maxTilt={10} glareColor="rgba(255, 109, 30, 0.18)">
+            <TiltCard className="not-found-art-tilt" maxTilt={10} glareColor="rgba(244, 180, 0, 0.18)">
               <div className="not-found-art glass-card">
                 <div className="not-found-number" aria-hidden="true">
                   <span className="not-found-digit not-found-digit-left">4</span>

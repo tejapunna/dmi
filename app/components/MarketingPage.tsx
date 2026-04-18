@@ -170,7 +170,7 @@ export default function MarketingPage({
           <div className="route-card-grid">
             {cards.map((card, index) => (
               <ScrollAnimate key={`${card.title}-${index}`} animation="fade-up" delay={220 + index * 80}>
-                <TiltCard className="route-tilt-wrap" maxTilt={9} glareColor="rgba(255, 109, 30, 0.16)">
+                <TiltCard className="route-tilt-wrap" maxTilt={9} glareColor="rgba(244, 180, 0, 0.16)">
                   <div className="route-card glass-card">
                     <h3>{card.title}</h3>
                     <p>{card.description}</p>
@@ -217,7 +217,7 @@ export default function MarketingPage({
                       animation="fade-up"
                       delay={260 + index * 60}
                     >
-                      <TiltCard className="route-detail-tilt-wrap" maxTilt={8} glareColor="rgba(255, 109, 30, 0.14)">
+                      <TiltCard className="route-detail-tilt-wrap" maxTilt={8} glareColor="rgba(244, 180, 0, 0.14)">
                         <div className="route-detail-card glass-card">
                           <h3>{card.title}</h3>
                           <p>{card.description}</p>
@@ -295,7 +295,7 @@ export default function MarketingPage({
               <div className="route-people-grid">
                 {people.map((person, index) => (
                   <ScrollAnimate key={`${person.name}-${index}`} animation="fade-up" delay={240 + index * 40}>
-                    <TiltCard className="route-people-tilt" maxTilt={7} glareColor="rgba(255, 109, 30, 0.13)">
+                    <TiltCard className="route-people-tilt" maxTilt={7} glareColor="rgba(244, 180, 0, 0.13)">
                       <article className="route-person-card glass-card">
                         <img src={person.image} alt={`${person.name} - ${person.role}`} className="route-person-image" />
                         <h3>{person.name}</h3>

@@ -7,9 +7,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" fill="#FF6D1E" opacity="0.15"/>
-        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <circle cx="12" cy="12" r="4" fill="#FF6D1E"/>
+        <circle cx="12" cy="12" r="10" fill="#F4B400" opacity="0.15"/>
+        <circle cx="12" cy="12" r="10" stroke="#F4B400" strokeWidth="1.5"/>
+        <circle cx="12" cy="12" r="4" fill="#F4B400"/>
       </svg>
     ),
     title: 'SEO',
@@ -24,9 +24,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="5" fill="#FF6D1E" opacity="0.15"/>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M8 12h8M12 8v8" stroke="#FF6D1E" strokeWidth="2" strokeLinecap="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#F4B400" opacity="0.15"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M8 12h8M12 8v8" stroke="#F4B400" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Paid Advertising',
@@ -41,9 +41,9 @@ const multiCols = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="5" fill="#FF6D1E" opacity="0.15"/>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M8 16L12 8l4 8" stroke="#FF6D1E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#F4B400" opacity="0.15"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M8 16L12 8l4 8" stroke="#F4B400" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     title: 'Digital Design',
@@ -59,9 +59,9 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="4" fill="#FF6D1E" opacity="0.12"/>
-        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M12 8v8M8 12h8" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#F4B400" opacity="0.12"/>
+        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M12 8v8M8 12h8" stroke="#F4B400" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'Social Media',
@@ -70,8 +70,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M12 8v4l3 3" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M12 8v4l3 3" stroke="#F4B400" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'CRO',
@@ -80,8 +80,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M12 8v4M12 16h.01" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M12 8v4M12 16h.01" stroke="#F4B400" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     label: 'Digital Marketing Strategy',
@@ -90,8 +90,8 @@ const singleItems = [
   {
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#FF6D1E" strokeWidth="1.5"/>
-        <path d="M6 18l4-8 4 6 2-4 2 6" stroke="#FF6D1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#F4B400" strokeWidth="1.5"/>
+        <path d="M6 18l4-8 4 6 2-4 2 6" stroke="#F4B400" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     label: 'Web Analytics',
@@ -221,11 +221,6 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-nav">
-      {/* Logo */}
-      <Link href="/" className="nav-logo">
-        <img src="/sunraiselogo.png" alt="Logo" className="nav-logo-img" />
-      </Link>
-
       {/* Desktop nav links */}
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
 

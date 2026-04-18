@@ -61,7 +61,7 @@ export default function Services() {
         <div className="services-grid">
           {services.map((s, i) => (
             <ScrollAnimate key={i} animation="fade-up" delay={i * 100}>
-              <TiltCard className="service-tilt" maxTilt={8} glareColor="rgba(255, 109, 30, 0.13)">
+              <TiltCard className="service-tilt" maxTilt={8} glareColor="rgba(244, 180, 0, 0.13)">
                 <div className="service-card">
                   <div className="service-icon">{s.icon}</div>
                   <h3 className="service-title">{s.title}</h3>
