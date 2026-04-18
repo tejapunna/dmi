@@ -1,42 +1,43 @@
 'use client';
 
 import ScrollAnimate from './ScrollAnimate';
+import TiltCard from './TiltCard';
 
 const services = [
   {
-    icon: '📈',
-    title: 'SEO & Content Marketing',
-    desc: 'Dominate search rankings with data-driven SEO strategies and compelling content that converts visitors into customers.',
+    icon: '01',
+    title: 'AI-Driven Brand Positioning',
+    desc: 'Advanced intelligence frameworks that align messaging, timing, and audience behavior for stronger brand authority.',
     link: '#',
   },
   {
-    icon: '📱',
-    title: 'Social Media Marketing',
-    desc: 'Build engaged communities across all platforms. From strategy to execution, we handle your complete social presence.',
+    icon: '02',
+    title: 'Website Development and Optimization',
+    desc: 'High-performance websites and campaign ecosystems built for speed, discoverability, and conversion impact.',
     link: '#',
   },
   {
-    icon: '🎯',
-    title: 'Paid Advertising',
-    desc: 'Maximize ROI with precision-targeted PPC campaigns across Google, Meta, TikTok, and programmatic channels.',
+    icon: '03',
+    title: 'Full IT Infrastructure Management',
+    desc: 'Secure hosting, network engineering, and scalable cloud systems that keep client operations resilient and fast.',
     link: '#',
   },
   {
-    icon: '🎨',
-    title: 'Branding & Design',
-    desc: 'Create memorable brand identities that resonate. From logos to complete visual systems that tell your story.',
+    icon: '04',
+    title: 'Digital Security and IP Protection',
+    desc: 'Technical safeguards, access controls, and proactive defense layers that protect digital assets and reputation.',
     link: '#',
   },
   {
-    icon: '💻',
-    title: 'Web Development',
-    desc: 'Build blazing-fast, conversion-optimized websites and web applications with cutting-edge technology stacks.',
+    icon: '05',
+    title: 'Cross-Platform Social Architecture',
+    desc: 'Platform-specific social structures engineered for relevance, consistency, and measurable visibility growth.',
     link: '#',
   },
   {
-    icon: '🎬',
-    title: 'Video Production',
-    desc: 'Produce scroll-stopping video content for ads, social media, and brand storytelling that captures attention.',
+    icon: '06',
+    title: 'Automation and Real-Time Analytics',
+    desc: 'Automated optimization pipelines and live performance dashboards that accelerate decision-making and campaign lift.',
     link: '#',
   },
 ];
@@ -46,31 +47,38 @@ export default function Services() {
     <section className="section" id="services">
       <div className="container">
         <ScrollAnimate animation="fade-up">
-          <p className="section-label">Our Services</p>
+          <p className="section-label">Core Advantage</p>
           <h2 className="section-title">
-            Full-spectrum digital<br />
-            <span className="gradient-text">marketing solutions</span>
+            A 100-Member High-Tech<br />
+            <span className="gradient-text">Branding Engine</span>
           </h2>
           <p className="section-desc">
-            From strategy to execution, we deliver end-to-end marketing services
-            that drive measurable growth for ambitious brands.
+            At the heart of DMI IT Solutions is a world-class IT division trained to execute with precision,
+            consistency, and cultural relevance across every major digital channel.
           </p>
         </ScrollAnimate>
 
         <div className="services-grid">
           {services.map((s, i) => (
             <ScrollAnimate key={i} animation="fade-up" delay={i * 100}>
-              <div className="service-card">
-                <div className="service-icon">{s.icon}</div>
-                <h3 className="service-title">{s.title}</h3>
-                <p className="service-desc">{s.desc}</p>
-                <a href={s.link} className="service-link">
-                  Learn More <span>→</span>
-                </a>
-              </div>
+              <TiltCard className="service-tilt" maxTilt={8} glareColor="rgba(255, 109, 30, 0.13)">
+                <div className="service-card">
+                  <div className="service-icon">{s.icon}</div>
+                  <h3 className="service-title">{s.title}</h3>
+                  <p className="service-desc">{s.desc}</p>
+                  <a href={s.link} className="service-link">Explore <span>→</span></a>
+                </div>
+              </TiltCard>
             </ScrollAnimate>
           ))}
         </div>
+
+        <ScrollAnimate animation="fade-up" delay={500}>
+          <p className="section-desc" style={{ marginTop: '2.2rem', maxWidth: '760px' }}>
+            This team powers automated content optimization, real-time analytics, cloud systems, and network engineering
+            so PR clients can lead conversations, protect visibility, and elevate long-term brand equity.
+          </p>
+        </ScrollAnimate>
       </div>
     </section>
   );

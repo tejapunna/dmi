@@ -3,15 +3,22 @@
 import ScrollAnimate from './ScrollAnimate';
 
 const bottomMembers = [
-  { initials: 'SP', role: 'SEO / PPC Specialist', hours: '15 hours' },
-  { initials: 'AL', role: 'Analytics Lead', hours: '6 hours' },
-  { initials: 'CW', role: 'Copywriter', hours: '30 hours' },
-  { initials: 'CP', role: 'Creative Producer', role2: '(Static & Video)', hours: '15 hours' },
-  { initials: 'UD', role: 'UX/UI Designer', hours: '5 hours' },
-  { initials: 'CD', role: 'Content Distribution', role2: 'Manager', hours: '8 hours' },
+  { initials: 'TT', role: 'TikTok and Instagram', hours: 'Social' },
+  { initials: 'YT', role: 'YouTube and Twitch', hours: 'Video' },
+  { initials: 'FB', role: 'Facebook and X', hours: 'Community' },
+  { initials: 'PI', role: 'Pinterest and LinkedIn', role2: 'Professional Reach', hours: 'Network' },
+  { initials: 'SP', role: 'Spotify and Apple Music', hours: 'Audio Brand' },
+  { initials: 'CF', role: 'Campaign and Film Add-ons', role2: 'Creative Services', hours: 'Premium' },
 ];
 
 const bottomX = [90, 254, 418, 582, 746, 910];
+
+const flowStages = [
+  { initials: 'IT', title: '100-Expert IT Department', subtitle: 'Dedicated execution capacity for PR clients' },
+  { initials: 'DC', title: 'Digital Command Center', subtitle: 'Technology, reporting, and campaign oversight' },
+  { initials: 'SM', title: 'All-Platform Social Team', subtitle: 'Complete ecosystem management and scaling' },
+  { initials: 'BM', title: 'Brand and Marketing Engine', subtitle: 'Long-term digital footprint and equity growth' },
+];
 
 export default function TeamTree() {
   return (
@@ -19,17 +26,24 @@ export default function TeamTree() {
       <div className="container">
         <ScrollAnimate animation="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <p className="section-label">Why PR Firms Partner With DMI IT Solutions</p>
             <h2 className="section-title" style={{ color: '#fff' }}>
-              Your Full Subscription-Based Team
+              The Technology and Branding Backbone PR Firms Need
             </h2>
             <p className="section-desc" style={{ margin: '0 auto', textAlign: 'center' }}>
-              An estimated schedule of specialists&apos; working hours under the $12,800/month rate is outlined
+              We give PR agencies a 100-expert IT department, a secure and scalable technical infrastructure,
+              a tech-driven command center, and a full-service digital branding engine for every client mandate.
+            </p>
+            <p className="section-desc" style={{ margin: '1rem auto 0', textAlign: 'center' }}>
+              Together, we help clients strengthen public image, expand digital footprint, increase visibility across all platforms,
+              and build long-term brand equity in competitive entertainment markets.
             </p>
           </div>
         </ScrollAnimate>
 
         <ScrollAnimate animation="fade-up" delay={200}>
-          <div className="org-tree">
+          <div className="team-tree-scroll">
+            <div className="org-tree">
             {/* =========== SVG CONNECTORS =========== */}
             <svg
               className="org-tree-svg"
@@ -89,30 +103,30 @@ export default function TeamTree() {
 
             {/* Level 1 — Project Director */}
             <div className="org-node" style={{ left: '50%', top: '0%' }}>
-              <div className="org-avatar org-avatar-md">PD</div>
-              <div className="org-name">Project Director</div>
-              <div className="org-hours">11 hours</div>
+              <div className="org-avatar org-avatar-md">DMI</div>
+              <div className="org-name">DMI IT Solutions</div>
+              <div className="org-hours">100 Experts</div>
             </div>
 
             {/* Level 2 — Project Manager */}
             <div className="org-node" style={{ left: '26%', top: '37%' }}>
-              <div className="org-avatar org-avatar-md">PM</div>
-              <div className="org-name">Project Manager</div>
-              <div className="org-hours">50 hours</div>
+              <div className="org-avatar org-avatar-md">WEB</div>
+              <div className="org-name">Website and IT Systems</div>
+              <div className="org-hours">Infrastructure</div>
             </div>
 
             {/* Level 2 — Head of Digital (focal / highlighted) */}
             <div className="org-node" style={{ left: '50%', top: '38%' }}>
-              <div className="org-avatar org-avatar-xl org-avatar-focal">HD</div>
-              <div className="org-name">Head of Digital</div>
-              <div className="org-hours org-hours-accent">13 hours</div>
+              <div className="org-avatar org-avatar-xl org-avatar-focal">SOC</div>
+              <div className="org-name">Social and Campaign Execution</div>
+              <div className="org-hours org-hours-accent">All Platforms</div>
             </div>
 
             {/* Level 2 — Digital Strategist */}
             <div className="org-node" style={{ left: '74%', top: '37%' }}>
-              <div className="org-avatar org-avatar-md">DS</div>
-              <div className="org-name">Digital Strategist</div>
-              <div className="org-hours">7 hours</div>
+              <div className="org-avatar org-avatar-md">CRE</div>
+              <div className="org-name">Creative and Production Add-Ons</div>
+              <div className="org-hours">Premium Services</div>
             </div>
 
             {/* Level 3 — Bottom row specialists */}
@@ -128,6 +142,31 @@ export default function TeamTree() {
                 <div className="org-hours">{m.hours}</div>
               </div>
             ))}
+            </div>
+          </div>
+
+          <div className="org-flow-mobile" aria-label="Progressive vertical team flow">
+            {flowStages.map((stage, index) => (
+              <article key={stage.title} className="org-flow-card glass-card">
+                <div className="org-flow-step">0{index + 1}</div>
+                <div className="org-flow-avatar">{stage.initials}</div>
+                <h3>{stage.title}</h3>
+                <p>{stage.subtitle}</p>
+                {index < flowStages.length - 1 ? <span className="org-flow-link" aria-hidden="true" /> : null}
+              </article>
+            ))}
+
+            <div className="org-flow-specialists glass-card">
+              <p className="org-flow-specialists-title">Music and Film Production Add-On Services</p>
+              <div className="org-flow-specialists-grid">
+                {bottomMembers.map((member) => (
+                  <div key={member.initials + member.role} className="org-flow-specialist-pill">
+                    <span>{member.initials}</span>
+                    <strong>{member.role}</strong>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </ScrollAnimate>
       </div>

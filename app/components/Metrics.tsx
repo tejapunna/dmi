@@ -5,24 +5,31 @@ import ScrollAnimate from './ScrollAnimate';
 
 const metrics = [
   {
-    number: '24',
-    label: 'Hours Turnaround',
+    number: '01',
+    label: 'Website Development',
     labelColor: 'blue',
-    desc: 'Launch projects in less than a day. Perfect for those tight deadlines and urgent tasks.',
+    desc: 'Custom websites, e-commerce platforms, campaign landing pages, portfolio and press sites, with technical SEO optimization.',
     glare: 'rgba(255, 109, 30, 0.15)',
   },
   {
-    number: '50%+',
-    label: 'Output Growth',
+    number: '02',
+    label: 'IT Infrastructure',
     labelColor: 'purple',
-    desc: 'Get ready for a major marketing scale-up. Outpace your average agency\'s output.',
+    desc: 'Cloud architecture, secure hosting, network setup, data protection, and always-on technical support for client stability.',
     glare: 'rgba(255, 109, 30, 0.15)',
   },
   {
-    number: '$100k',
-    label: 'Saving',
+    number: '03',
+    label: 'Social Media Management',
     labelColor: 'magenta',
-    desc: 'Average saving on annual agency fees compared to building an in-house team.',
+    desc: 'End-to-end social management across TikTok, Instagram, YouTube, Facebook, X, Snapchat, Pinterest, LinkedIn, Spotify, Apple Music, and Twitch.',
+    glare: 'rgba(255, 109, 30, 0.15)',
+  },
+  {
+    number: '04',
+    label: 'Marketing and Campaigns',
+    labelColor: 'orange',
+    desc: 'Digital advertising, brand storytelling, audience targeting, campaign management, influencer integration, and full analytics reporting.',
     glare: 'rgba(255, 109, 30, 0.15)',
   },
 ];
@@ -33,11 +40,15 @@ export default function Metrics() {
       <div className="container">
         <ScrollAnimate animation="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <p className="section-label">Why Choose Us</p>
+            <p className="section-label">Comprehensive Digital Services</p>
             <h2 className="section-title">
-              Meet the new generation<br />
-              of <span className="gradient-text">digital marketing services</span>
+              Built for PR Firms<br />
+              and <span className="gradient-text">Their Clients</span>
             </h2>
+            <p className="section-desc" style={{ margin: '0 auto' }}>
+              We deliver the technical foundation and campaign execution layer PR firms need to scale client visibility,
+              consistency, and digital protection across every platform.
+            </p>
           </div>
         </ScrollAnimate>
 
