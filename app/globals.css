@@ -169,7 +169,7 @@ ol {
   align-items: center;
   gap: 0.5rem;
   padding: 14px 32px;
-  background: var(--gradient-primary);
+  background: #ffffff;
   color: #050505;
   font-weight: 600;
   font-size: 0.95rem;
@@ -245,7 +245,7 @@ ol {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 40px);
+  width: 80%;
   max-width: 1540px;
   z-index: 1000;
   padding: 14px 28px;

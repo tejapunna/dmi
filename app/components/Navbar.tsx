@@ -223,6 +223,10 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-nav">
       {/* Desktop nav links */}
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+                <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>Branding</Link>
+        <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>PR Services</Link>
+
 
         {/* Our Services dropdown */}
         <div
