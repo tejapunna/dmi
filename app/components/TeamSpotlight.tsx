@@ -1,4 +1,4 @@
-'use client';
+  'use client';
 
 import ScrollAnimate from './ScrollAnimate';
 import TiltCard from './TiltCard';

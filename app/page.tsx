@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MetricsStats from './components/MetricsStats';
+import EntertainmentSection from './components/EntertainmentSection';
 import TrustBar from './components/TrustBar';
 import WhoWeAre from './components/WhoWeAre';
 import CoreAdvantage from './components/CoreAdvantage';
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <MetricsStats />
+      <EntertainmentSection />
       <TrustBar />
       <WhoWeAre />
       <CustomerReviews />
