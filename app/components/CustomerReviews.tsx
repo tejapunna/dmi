@@ -11,7 +11,7 @@ const reviews = [
     initials: 'EC',
   },
   {
-    text: 'DMI IT Solutions helped us simplify a complicated digital roadmap into an execution plan that actually worked. We saw better engagement quality, stronger campaign consistency, and faster reporting cycles.',
+    text: 'DMI Suraise Solutions helped us simplify a complicated digital roadmap into an execution plan that actually worked. We saw better engagement quality, stronger campaign consistency, and faster reporting cycles.',
     name: 'Marcus Lee',
     role: 'Head of Marketing Operations',
     initials: 'ML',

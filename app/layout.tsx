@@ -10,14 +10,9 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
-const ankaCoder = localFont({
-  src: [
-    { path: "../public/fonts/anka-coder/AnkaCoder-r.ttf", weight: "400", style: "normal" },
-    { path: "../public/fonts/anka-coder/AnkaCoder-i.ttf", weight: "400", style: "italic" },
-    { path: "../public/fonts/anka-coder/AnkaCoder-b.ttf", weight: "700", style: "normal" },
-    { path: "../public/fonts/anka-coder/AnkaCoder-bi.ttf", weight: "700", style: "italic" },
-  ],
-  variable: "--font-anka-coder",
+const canterbury = localFont({
+  src: "../public/fonts/Canterbury.ttf",
+  variable: "--font-canterbury",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${lexend.variable} ${ankaCoder.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${lexend.variable} ${canterbury.variable}`}>
       <body>
         <Suspense fallback={null}>
           <InquiryPrefill />

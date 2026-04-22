@@ -26,7 +26,7 @@ export default function TeamTree() {
       <div className="container">
         <ScrollAnimate animation="fade-up">
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <p className="section-label">Why PR Firms Partner With DMI IT Solutions</p>
+            <p className="section-label">Why PR Firms Partner With DMI Suraise Solutions</p>
             <h2 className="section-title" style={{ color: '#fff' }}>
               The Technology and Branding Backbone PR Firms Need
             </h2>
@@ -104,7 +104,7 @@ export default function TeamTree() {
             {/* Level 1 — Project Director */}
             <div className="org-node" style={{ left: '50%', top: '0%' }}>
               <div className="org-avatar org-avatar-md">DMI</div>
-              <div className="org-name">DMI IT Solutions</div>
+              <div className="org-name">DMI Suraise Solutions</div>
               <div className="org-hours">100 Experts</div>
             </div>
 

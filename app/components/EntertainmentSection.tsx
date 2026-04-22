@@ -479,24 +479,8 @@ export default function EntertainmentSection() {
                 <div className="community-image-overlay">
                   <div className="community-image-overlay-card">
                     <h3 className="community-image-title">Community & Impact</h3>
-                    <p className="community-image-subtitle">Charity Initiatives</p>
+                    <p className="community-image-subtitle">Building meaningful connections through creative storytelling and social initiatives that span entertainment, culture, and community development.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="community-content">
-              <p className="community-desc">
-                Building meaningful connections through creative storytelling and social initiatives that span entertainment, culture, and community development.
-              </p>
-              <div className="community-stats">
-                <div className="stat">
-                  <span className="stat-number">4</span>
-                  <span className="stat-label">Industries</span>
-                </div>
-                <div className="stat">
-                  <span className="stat-number">∞</span>
-                  <span className="stat-label">Reach</span>
                 </div>
               </div>
             </div>

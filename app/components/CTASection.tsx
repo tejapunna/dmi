@@ -15,7 +15,7 @@ export default function CTASection() {
               <ParallaxLayer className="cta-glow cta-glow-2" speed={0.11} reverse />
               <p className="section-label" style={{ textAlign: 'center' }}>THE FUTURE OF PR SUPPORT</p>
               <h2 className="cta-title">
-                DMI IT Solutions delivers the technology, infrastructure, and creative power PR firms need to elevate their clients with confidence, speed, and cultural impact.
+                DMI Suraise Solutions delivers the technology, infrastructure, and creative power PR firms need to elevate their clients with confidence, speed, and cultural impact.
               </h2>
               <p className="cta-desc">
                 Let&apos;s build the next generation of digital branding together.

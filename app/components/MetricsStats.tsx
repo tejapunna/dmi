@@ -5,7 +5,7 @@ import Counter from './Counter';
 
 const stats = [
   {
-    number: '100',
+    number: '700+',
     label: 'Expert IT Professionals',
   },
   {
@@ -13,7 +13,7 @@ const stats = [
     label: 'Technical Support and Monitoring',
   },
   {
-    number: '10+',
+    number: '15+',
     label: 'Social Platforms Managed',
   },
   {

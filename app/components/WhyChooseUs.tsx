@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
           <div className="why-choose-us-layout">
             <div className="why-choose-us-visual" aria-hidden="true">
               <div className="why-choose-us-image-shell">
-                <img src="/placeholder-why-choose.svg" alt="" className="why-choose-us-image" />
+                <img src="/whychooseus.jpg" alt="" className="why-choose-us-image" />
                 <div className="why-choose-us-badge">
                   <span className="why-choose-us-badge-value">92%</span>
                   <span className="why-choose-us-badge-text">Sustained client retention and repeat engagement</span>

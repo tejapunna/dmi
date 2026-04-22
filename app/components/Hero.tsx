@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="hero-layout">
         <ScrollAnimate animation="fade-up" delay={120} className="hero-logo-mobile-wrap">
           <div className="hero-logo-container hero-logo-mobile">
-            <img src="/munni-logo-dmi.png" alt="DMI IT Solutions Logo" className="hero-logo" />
+            <img src="/munni-logo-dmi.png" alt="DMI Suraise Solutions Logo" className="hero-logo" />
           </div>
         </ScrollAnimate>
 
@@ -36,7 +36,7 @@ export default function Hero() {
 
           <ScrollAnimate animation="fade-up" delay={200}>
             <div className="hero-logo-container hero-logo-desktop">
-              <img src="/munni-logo-dmi.png" alt="DMI IT Solutions Logo" className="hero-logo" />
+              <img src="/munni-logo-dmi.png" alt="DMI Suraise Solutions Logo" className="hero-logo" />
             </div>
           </ScrollAnimate>
 

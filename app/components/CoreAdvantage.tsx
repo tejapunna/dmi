@@ -22,7 +22,7 @@ export default function CoreAdvantage() {
             <p className="section-label core-advantage-label">⭐ OUR CORE ADVANTAGE</p>
             <h2 className="section-title core-advantage-title">A 100-MEMBER HIGH-TECH BRANDING ENGINE</h2>
             <p className="section-desc core-advantage-copy">
-              At the heart of DMI IT Solutions is a world-class IT division of 100 experts trained in:
+              At the heart of DMI Suraise Solutions is a world-class IT division of 100 experts trained in:
             </p>
 
             <ul className="core-advantage-list">
