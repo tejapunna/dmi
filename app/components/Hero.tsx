@@ -53,9 +53,9 @@ export default function Hero() {
                 <span>Contact Us</span>
                 <span>→</span>
               </a>
-              <a href="#services" className="btn-secondary hero-secondary-cta">
+              {/* <a href="#services" className="btn-secondary hero-secondary-cta">
                 View Digital Services
-              </a>
+              </a> */}
             </div>
           </ScrollAnimate>
 
