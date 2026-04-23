@@ -103,9 +103,16 @@ export default function HomeContact() {
               </div>
 
               <div style={{ maxWidth: '70%', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
-                <p className="home-contact-description" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
-                  Award Winning Impact
-                </p>
+<p
+  className="home-contact-description"
+  style={{
+    fontSize: '3rem',
+    fontFamily: 'Poppins',
+    marginBottom: '1rem'
+  }}
+>
+  Award Winning Impact
+</p>
 
                 <button
                   type="button"

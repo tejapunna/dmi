@@ -3715,7 +3715,7 @@ ol {
   .entertainment-section {
     position: relative;
     overflow: hidden;
-    padding-top: 120px;
+    padding-top: 50px;
     padding-bottom: 120px;
   }
 
@@ -8486,7 +8486,7 @@ ol {
 
 .home-contact-section {
   position: relative;
-  padding: 5rem 0;
+  padding: 2rem 0;
   background: var(--bg-primary);
 }
 
