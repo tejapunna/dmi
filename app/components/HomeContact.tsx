@@ -75,17 +75,16 @@ export default function HomeContact() {
         <ScrollAnimate animation="fade-up">
           <div className="home-contact-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
             <div className="home-contact-content" style={{ width: '100%', marginBottom: '3rem', display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
-              <div style={{ maxWidth: '900px' }}>
+              <div style={{ maxWidth: '1000px' }}>
                 <h2 className="home-contact-title" style={{ textAlign: 'center', whiteSpace: 'normal' }}>
-                  <span style={{ fontWeight: 'bold' }}>Ready to Transform Your Global</span> <span className="gradient-text" style={{ fontWeight: 'bold' }}>Presence?</span>
+                  <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>R</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>eady to</span> <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>T</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>ransform Your </span><span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>G</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>lobal</span> <span className="gradient-text" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>P</span><span className="gradient-text" style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>resence?</span>
                 </h2>
               </div>
               <div style={{ maxWidth: '70%', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
-                <p className="home-contact-description">
-                  Connect with our team to discuss your PR, marketing, and digital infrastructure needs. Whether you're launching something new or scaling what exists, we're here to help.
+                <p className="home-contact-description" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
+                Award Winning Impact  
                 </p>
                 
-                {/* <p className="home-contact-label">Get In Touch</p> */}
                 <button
                   type="button"
                   className="home-contact-cta-button"
