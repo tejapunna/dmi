@@ -84,7 +84,6 @@ h3,
 h4,
 h5,
 h6,
-.section-label,
 .route-card-link,
 .route-contact-cta-btn,
 .route-person-role,
@@ -125,6 +124,7 @@ ol {
 .section-label {
   font-size: 0.8rem;
   font-weight: 600;
+  font-family: poppins;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--accent-purple);
@@ -4010,6 +4010,7 @@ ol {
   .festival-marquee-header p {
     margin-top: 0.45rem;
     max-width: 70ch;
+    font-family: poppins;
     color: var(--text-secondary);
     line-height: 1.65;
     font-size: 0.94rem;
@@ -4085,6 +4086,7 @@ ol {
 
   .festival-feature-copy p {
     color: var(--text-secondary);
+    font-family: poppins;
     font-size: 0.95rem;
     line-height: 1.65;
     max-width: 58ch;
@@ -4913,6 +4915,7 @@ ol {
   .about-us-tagline {
     font-size: clamp(1.1rem, 2.1vw, 1.7rem);
     font-weight: 700;
+    font-family: poppins;
     color: var(--accent-gold-bright);
   }
 
@@ -8531,7 +8534,7 @@ ol {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
-  font-family: var(--font-display);
+  font-family: poppins;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   border-radius: var(--radius-md);

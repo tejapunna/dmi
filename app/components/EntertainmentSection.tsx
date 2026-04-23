@@ -177,7 +177,7 @@ const partnershipStats = [
   { value: '500+', label: 'Global Partners' },
   { value: '4', label: 'Film Industries' },
   { value: '20+', label: 'Countries' },
-  { value: '100', label: 'Team Members' },
+  { value: '700', label: 'Team Members' },
 ];
 
 const partnershipTiles = [
@@ -379,6 +379,8 @@ export default function EntertainmentSection() {
         <ScrollAnimate animation="fade-up" delay={120}>
           <div className="entertainment-marquee-wrap festival-marquee-shell">
             <div className="marquee-label">Represented across</div>
+            
+            <p className="section-label">Entertainment</p>
             <div className="festival-tab-row" role="tablist" aria-label="Festival categories">
               {festivalTabs.map((fest, index) => (
                 <button

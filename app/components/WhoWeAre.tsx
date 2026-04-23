@@ -19,7 +19,7 @@ export default function WhoWeAre() {
             </article>
 
             <article className="who-we-are-card who-we-are-image-card who-we-are-mission-image" aria-label="Mission image">
-              <img src="/group.jpeg" alt="Mission image" loading="lazy" />
+              <img src="/brand.jpeg" alt="Mission image" loading="lazy" />
             </article>
 
             <article className="who-we-are-card who-we-are-card-vision">
