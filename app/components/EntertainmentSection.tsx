@@ -362,7 +362,7 @@ export default function EntertainmentSection() {
 
             <div className="entertainment-hero-content">
               <p className="section-label">Art for Peace</p>
-              <h1 className="entertainment-hero-title">Award-Winning Impact</h1>
+              <h1 className="entertainment-hero-title"><span style={{ fontSize: '1.6em' }}>A</span>ward-Winning Impact</h1>
               <p className="entertainment-hero-desc">
                 A landmark initiative celebrating creative expression and social change across global entertainment platforms.
               </p>

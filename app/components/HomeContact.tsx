@@ -77,7 +77,7 @@ export default function HomeContact() {
             <div className="home-contact-content">
               <p className="home-contact-label">Get In Touch</p>
               <h2 className="home-contact-title">
-                Ready to Transform<br />
+                <span style={{ fontSize: '1.5em' }}>R</span>eady to Transform<br />
                 Your Digital <span className="gradient-text">Presence?</span>
               </h2>
               <p className="home-contact-description">
