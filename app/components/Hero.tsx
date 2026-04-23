@@ -49,8 +49,8 @@ export default function Hero() {
 
           <ScrollAnimate animation="fade-up" delay={400}>
             <div className="hero-actions">
-              <a href="/contact-us" className="btn-primary">
-                <span>Contact Us</span>
+              <a href="/about" className="btn-primary">
+                <span>About Us</span>
                 <span>→</span>
               </a>
               {/* <a href="#services" className="btn-secondary hero-secondary-cta">

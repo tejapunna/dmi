@@ -88,6 +88,8 @@ export default function HomeContact() {
                   <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>R</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>eady to</span> <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>T</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>ransform Your </span><span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>G</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>lobal</span> <span className="gradient-text" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>P</span><span className="gradient-text" style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>resence?</span>
                 </h2>
               </div>
+              
+              <h1 className="entertainment-hero-title"><span style={{ fontSize: '1.6em' }}>A</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>ward-Winning Impact</span></h1>
 
               <div className="metrics-stats-grid" style={{ width: '100%', marginTop: '2rem' }}>
                 {stats.map((stat, index) => (
@@ -103,16 +105,7 @@ export default function HomeContact() {
               </div>
 
               <div style={{ maxWidth: '70%', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
-<p
-  className="home-contact-description"
-  style={{
-    fontSize: '3rem',
-    fontFamily: 'Poppins',
-    marginBottom: '1rem'
-  }}
->
-  Award Winning Impact
-</p>
+
 
                 <button
                   type="button"
