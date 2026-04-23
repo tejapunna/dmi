@@ -73,27 +73,31 @@ export default function HomeContact() {
     <section className="section home-contact-section" id="contact">
       <div className="container">
         <ScrollAnimate animation="fade-up">
-          <div className="home-contact-wrapper">
-            <div className="home-contact-content">
-              <p className="home-contact-label">Get In Touch</p>
-              <h2 className="home-contact-title">
-                <span style={{ fontSize: '1.5em' }}>R</span>eady to Transform<br />
-                Your Digital <span className="gradient-text">Presence?</span>
-              </h2>
-              <p className="home-contact-description">
-                Connect with our team to discuss your PR, marketing, and digital infrastructure needs. Whether you're launching something new or scaling what exists, we're here to help.
-              </p>
-              
-              <button
-                type="button"
-                className="home-contact-cta-button"
-                onClick={() => setIsFormOpen(true)}
-              >
-                PR House
-              </button>
+          <div className="home-contact-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+            <div className="home-contact-content" style={{ width: '100%', marginBottom: '3rem', display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
+              <div style={{ maxWidth: '900px' }}>
+                <p className="home-contact-label">Get In Touch</p>
+                <h2 className="home-contact-title" style={{ textAlign: 'center', whiteSpace: 'normal' }}>
+                  <span style={{ fontWeight: 'bold' }}>Ready to Transform Your Digital</span> <span className="gradient-text" style={{ fontWeight: 'bold' }}>Presence?</span>
+                </h2>
+              </div>
+              <div style={{ maxWidth: '70%', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
+                <p className="home-contact-description">
+                  Connect with our team to discuss your PR, marketing, and digital infrastructure needs. Whether you're launching something new or scaling what exists, we're here to help.
+                </p>
+                
+                <button
+                  type="button"
+                  className="home-contact-cta-button"
+                  onClick={() => setIsFormOpen(true)}
+                  style={{ margin: '0 auto' }}
+                >
+                  PR House
+                </button>
+              </div>
             </div>
 
-            <div className="home-contact-features">
+            <div className="home-contact-features" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', width: '100%' }}>
               <div className="home-contact-feature">
                 <div className="feature-icon">📧</div>
                 <h4>24/7 Support</h4>
