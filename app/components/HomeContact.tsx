@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import ScrollAnimate from './ScrollAnimate';
+import Counter from './Counter';
+
+const stats = [
+  { number: '700+', label: 'Expert IT Professionals' },
+  { number: '24/7', label: 'Technical Support and Monitoring' },
+  { number: '15+', label: 'Social Platforms Managed' },
+  { number: '360°', label: 'Digital Execution Coverage' },
+];
 
 export default function HomeContact() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -80,37 +88,33 @@ export default function HomeContact() {
                   <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>R</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>eady to</span> <span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>T</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>ransform Your </span><span style={{ fontSize: '1.5em', fontWeight: 'bold' }}>G</span><span style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>lobal</span> <span className="gradient-text" style={{ fontSize: '1.5em', fontWeight: 'bold' }}>P</span><span className="gradient-text" style={{ fontWeight: 'bold', fontFamily: 'poppins' }}>resence?</span>
                 </h2>
               </div>
+
+              <div className="metrics-stats-grid" style={{ width: '100%', marginTop: '2rem' }}>
+                {stats.map((stat, index) => (
+                  <ScrollAnimate key={index} animation="fade-up" delay={index * 100}>
+                    <div className="metrics-stats-item">
+                      <div className="metrics-stats-number">
+                        <Counter end={stat.number} duration={2} />
+                      </div>
+                      <div className="metrics-stats-label">{stat.label}</div>
+                    </div>
+                  </ScrollAnimate>
+                ))}
+              </div>
+
               <div style={{ maxWidth: '70%', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
                 <p className="home-contact-description" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
-                Award Winning Impact  
+                  Award Winning Impact
                 </p>
-                
+
                 <button
                   type="button"
                   className="home-contact-cta-button"
                   onClick={() => setIsFormOpen(true)}
                   style={{ margin: '0 auto' }}
                 >
-                  PR House
+                  Enquiry Form
                 </button>
-              </div>
-            </div>
-
-            <div className="home-contact-features" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', width: '100%' }}>
-              <div className="home-contact-feature">
-                <div className="feature-icon">📧</div>
-                <h4>24/7 Support</h4>
-                <p>Response within 1 to 24 hours</p>
-              </div>
-              <div className="home-contact-feature">
-                <div className="feature-icon">🔒</div>
-                <h4>Private & Secure</h4>
-                <p>Your data is encrypted and confidential</p>
-              </div>
-              <div className="home-contact-feature">
-                <div className="feature-icon">⚡</div>
-                <h4>Fast Onboarding</h4>
-                <p>Get started in minutes</p>
               </div>
             </div>
           </div>
