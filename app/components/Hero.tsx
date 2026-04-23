@@ -13,6 +13,10 @@ export default function Hero() {
       {/* <ParallaxLayer className="hero-glow hero-glow-2" speed={0.42} reverse maxOffset={260} /> */}
 
       <div className="hero-layout">
+        <div className="hero-layout-copy" aria-hidden="true">
+          <h3 className="hero-layout-copy-title">From My Heart To Your Heart love & peace we are one</h3>
+        </div>
+
         <ScrollAnimate animation="fade-up" delay={120} className="hero-logo-mobile-wrap">
           <div className="hero-logo-container hero-logo-mobile">
             <img src="/munni-logo-dmi.png" alt="DMI Suraise Solutions Logo" className="hero-logo" />

@@ -9,7 +9,7 @@ import CoreAdvantage from './components/CoreAdvantage';
 import CustomerReviews from './components/CustomerReviews';
 import WhyChooseUs from './components/WhyChooseUs';
 import Metrics from './components/Metrics';
-import HomeContact from './components/HomeContact';
+// import HomeContact from './components/HomeContact';
 import Services from './components/Services';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
@@ -19,16 +19,16 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <HomeContact />
+      {/* <HomeContact /> */}
       {/* <MetricsStats /> */}
       <EntertainmentSection />
       <AboutUsSection />
       <WhoWeAre />
-      <HomeContact />
+      {/* <HomeContact /> */}
       <Services />
       <WhyChooseUs />
       <Metrics />
-      <HomeContact />
+      {/* <HomeContact /> */}
       <CoreAdvantage />
       {/* <CustomerReviews /> */}
       <TrustBar />
