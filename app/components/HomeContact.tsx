@@ -76,7 +76,6 @@ export default function HomeContact() {
           <div className="home-contact-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
             <div className="home-contact-content" style={{ width: '100%', marginBottom: '3rem', display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
               <div style={{ maxWidth: '900px' }}>
-                <p className="home-contact-label">Get In Touch</p>
                 <h2 className="home-contact-title" style={{ textAlign: 'center', whiteSpace: 'normal' }}>
                   <span style={{ fontWeight: 'bold' }}>Ready to Transform Your Digital</span> <span className="gradient-text" style={{ fontWeight: 'bold' }}>Presence?</span>
                 </h2>
@@ -86,6 +85,7 @@ export default function HomeContact() {
                   Connect with our team to discuss your PR, marketing, and digital infrastructure needs. Whether you're launching something new or scaling what exists, we're here to help.
                 </p>
                 
+                <p className="home-contact-label">Get In Touch</p>
                 <button
                   type="button"
                   className="home-contact-cta-button"
